@@ -5,7 +5,7 @@ position: 12
 
 # tns proxy clear
 
-### Description
+## Description
 
 Clears the currently configured proxy settings of the NativeScript CLI.
 

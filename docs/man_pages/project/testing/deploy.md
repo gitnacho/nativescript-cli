@@ -5,12 +5,12 @@ position: 7
 
 # tns deploy
 
-### Description
+## Description
 
 Prepares, builds and deploys the project to a connected device or native emulator. <% if(isMacOS) { %>You must specify the target platform on which you want to deploy.<% } %> It will deploy the app on all connected devices targeting the selected platform.
 
 <% if(isMacOS) { %>
-<% if(isHtml) { %>> <% } %>IMPORTANT: Before building for iOS device, verify that you have configured a valid pair of certificate and provisioning profile on your macOS system. <% if(isHtml) { %>For more information, see the [Code Signing](https://developer.apple.com/support/code-signing/) and [Maintain Signing Assets](https://help.apple.com/xcode/mac/current/#/dev3a05256b8) sections from the Apple Developer documentation.<% } %>
+<% if(isHtml) { %>> <% } %> **Important**: Before building for iOS device, verify that you have configured a valid pair of certificate and provisioning profile on your macOS system. <% if(isHtml) { %>For more information, see the [Code Signing](https://developer.apple.com/support/code-signing/) and [Maintain Signing Assets](https://help.apple.com/xcode/mac/current/#/dev3a05256b8) sections from the Apple Developer documentation.<% } %>
 
 ### Commands
 
@@ -34,13 +34,13 @@ Deploy on Android | `$ tns deploy android [--device <Device ID>] [--key-store-pa
 * `--key-store-alias` - Provides the alias for the keystore file specified with `--key-store-path`. You can use the `--key-store-*` options along with `--release` to produce a signed release build. You need to specify all `--key-store-*` options.
 * `--key-store-alias-password` - Provides the password for the alias specified with `--key-store-alias-password`. You can use the `--key-store-*` options along with `--release` to produce a signed release build. You need to specify all `--key-store-*` options.
 * `--env.*` - Specifies additional flags that the bundler may process. Can be passed multiple times. Supported additional flags:
-    *   `--env.aot` - creates Ahead-Of-Time build (Angular only).
-    *   `--env.snapshot`- creates [a V8 Snapshot](https://docs.nativescript.org/performance-optimizations/bundling-with-webpack#v8-heap-snapshot) decreasing the app start time (only for release builds for Android).
-    *   `--env.compileSnapshot`- compiles the static assets produced by `--env.snapshot` into `.so` files allowing the native build to split them per architecture. This will reduce the app size when using the `--aab` option. 
-    *   `--env.uglify` - provides basic obfuscation and smaller app size.
-    *   `--env.report` - creates a Webpack report inside a `report` folder in the root folder.
-    *   `--env.sourceMap` - creates inline source maps.
-    *   `--env.hiddenSourceMap` - creates sources maps in the root folder (useful for Crashlytics usage with bundled app in release).
+  + `--env.aot` - creates Ahead-Of-Time build (Angular only).
+  + `--env.snapshot`- creates [a V8 Snapshot](https://docs.nativescript.org/performance-optimizations/bundling-with-webpack#v8-heap-snapshot) decreasing the app start time (only for release builds for Android).
+  + `--env.compileSnapshot`- compiles the static assets produced by `--env.snapshot` into `.so` files allowing the native build to split them per architecture. This will reduce the app size when using the `--aab` option.
+  + `--env.uglify` - provides basic obfuscation and smaller app size.
+  + `--env.report` - creates a Webpack report inside a `report` folder in the root folder.
+  + `--env.sourceMap` - creates inline source maps.
+  + `--env.hiddenSourceMap` - creates sources maps in the root folder (useful for Crashlytics usage with bundled app in release).
 * `--aab` - Specifies that the command will produce and deploy an Android App Bundle.
 * `--force` - If set, skips the application compatibility checks and forces `npm i` to ensure all dependencies are installed. Otherwise, the command will check the application compatibility with the current CLI version and could fail requiring `tns migrate`.
 

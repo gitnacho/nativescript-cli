@@ -5,7 +5,7 @@ position: 11
 
 # tns resources generate icons
 
-### Description
+## Description
 
 Generates all icons for Android and iOS platforms and places the generated images in the correct directories under `App_Resources/<platform>` directory.
 

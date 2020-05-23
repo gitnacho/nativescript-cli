@@ -5,7 +5,7 @@ position: 8
 
 # tns extension uninstall
 
-### Description
+## Description
 
 Uninstalls the specified extension, after which you will no longer be able to use the functionality added by this extensions to the NativeScript CLI.
 

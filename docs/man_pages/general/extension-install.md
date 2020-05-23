@@ -5,7 +5,7 @@ position: 7
 
 # tns extension install
 
-### Description
+## Description
 
 Installs specified extension. Each extension adds additional functionality that's accessible directly from NativeScript CLI.
 
@@ -18,11 +18,11 @@ General | `$ tns extension install <Extension>`
 ### Arguments
 
 * `<Extension>` can be any of the following.
-    * A `<Name>` or `<Name>@<Version>` where `<Name>` is the name of a package that is published in the npm registry and `<Version>` is a valid version of this plugin.
-    * A `<Local Path>` to the directory which contains the extension, including its `package.json` file.
-    * A `<Local Path>` to a `.tar.gz` archive containing a directory with the extension and its `package.json` file.
-    * A `<URL>` which resolves to a `.tar.gz` archive containing a directory with the extension and its `package.json` file.
-    * A `<git Remote URL>` which resolves to a `.tar.gz` archive containing a directory with the extension and its `package.json` file.
+  + A `<Name>` or `<Name>@<Version>` where `<Name>` is the name of a package that is published in the npm registry and `<Version>` is a valid version of this plugin.
+  + A `<Local Path>` to the directory which contains the extension, including its `package.json` file.
+  + A `<Local Path>` to a `.tar.gz` archive containing a directory with the extension and its `package.json` file.
+  + A `<URL>` which resolves to a `.tar.gz` archive containing a directory with the extension and its `package.json` file.
+  + A `<git Remote URL>` which resolves to a `.tar.gz` archive containing a directory with the extension and its `package.json` file.
 
 <% if(isHtml) { %>
 

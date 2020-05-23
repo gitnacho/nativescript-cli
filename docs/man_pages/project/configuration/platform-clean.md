@@ -5,7 +5,7 @@ position: 3
 
 # tns platform clean
 
-### Description
+## Description
 
 Removes and adds the selected platform to the project currently targets. <% if(isMacOS) { %>You must specify the target platform that you want to remove.<% } %>
 
@@ -18,6 +18,7 @@ Usage | Synopsis
 
 <% if(isMacOS) { %>### Arguments
 `<Platform>` is the target mobile platform that you want to clean in your project. You can set the following target platforms.
+
 * `android` - Removes configuration changes for Android development.
 * `ios` - Removes configuration changes for iOS development.<% } %>
 

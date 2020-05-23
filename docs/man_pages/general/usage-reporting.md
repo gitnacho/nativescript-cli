@@ -5,7 +5,7 @@ position: 17
 
 # tns usage-reporting
 
-### Description
+## Description
 
 Configures anonymous usage reporting for the NativeScript CLI. All data gathered is used strictly for improving the product and will never be used to identify or contact you.
 
@@ -18,6 +18,7 @@ General | `$ tns usage-reporting [<Command>]`
 ### Arguments
 
 `<Command>` extends the `usage-reporting` command. You can set the following values for this attribute.
+
 * `status` - Shows the current configuration for anonymous usage reporting for the NativeScript CLI.
 * `enable` - Enables anonymous usage reporting.
 * `disable` - Disables anonymous usage reporting.

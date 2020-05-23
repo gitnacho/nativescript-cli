@@ -5,13 +5,13 @@ position: 11
 
 # tns run ios
 
-### Description
+## Description
 
 Runs your project on a connected iOS device or in the iOS Simulator, if configured. This is shorthand for prepare, build and deploy. While your app is running, prints the output from the application in the console and watches for changes in your code. Once a change is detected, it synchronizes the change with all selected devices and restarts/refreshes the application.
 
 <% if(isConsole && (isWindows || isLinux)) { %>WARNING: You can run this command only on macOS systems. To view the complete help for this command, run `$ tns help run ios`<% } %>
 <% if((isConsole && isMacOS) || isHtml) { %>
-<% if(isHtml) { %>> <% } %>IMPORTANT: Before building for iOS device, verify that you have configured a valid pair of certificate and provisioning profile on your macOS system. <% if(isHtml) { %>For more information, see the [Code Signing](https://developer.apple.com/support/code-signing/) and [Maintain Signing Assets](https://help.apple.com/xcode/mac/current/#/dev3a05256b8) sections from the Apple Developer documentation.<% } %>
+<% if(isHtml) { %>> <% } %> **Important**: Before building for iOS device, verify that you have configured a valid pair of certificate and provisioning profile on your macOS system. <% if(isHtml) { %>For more information, see the [Code Signing](https://developer.apple.com/support/code-signing/) and [Maintain Signing Assets](https://help.apple.com/xcode/mac/current/#/dev3a05256b8) sections from the Apple Developer documentation.<% } %>
 
 <% if(isHtml) { %>
 When running this command without passing `--release` flag, the HMR (Hot Module Replacement) is enabled by default. In case you want to disable HMR, you can pass `--no-hmr` flag. When `--release` is passed, CLI disables HMR.
@@ -37,12 +37,12 @@ Start an emulator with specified device identifier and sdk | `$ tns run ios [--d
 * `--no-watch` - If set, changes in your code will not be reflected during the execution of this command.
 * `--release` - If set, produces a release build by running webpack in production mode and native build in release mode. Otherwise, produces a debug build.
 * `--no-hmr` - Disables Hot Module Replacement (HMR). In this case, when a change in the code is applied, CLI will transfer the modified files and restart the application.
-* `--env.*` - Specifies additional flags that the bundler may process. Can be passed multiple times. 
-    *   `--env.aot` - creates Ahead-Of-Time build (Angular only).
-    *   `--env.uglify` - provides basic obfuscation and smaller app size.
-    *   `--env.report` - creates a Webpack report inside a `report` folder in the root folder.
-    *   `--env.sourceMap` - creates inline source maps.
-    *   `--env.hiddenSourceMap` - creates sources maps in the root folder (useful for Crashlytics usage with bundled app in release).
+* `--env.*` - Specifies additional flags that the bundler may process. Can be passed multiple times.
+  + `--env.aot` - creates Ahead-Of-Time build (Angular only).
+  + `--env.uglify` - provides basic obfuscation and smaller app size.
+  + `--env.report` - creates a Webpack report inside a `report` folder in the root folder.
+  + `--env.sourceMap` - creates inline source maps.
+  + `--env.hiddenSourceMap` - creates sources maps in the root folder (useful for Crashlytics usage with bundled app in release).
 * `--force` - If set, skips the application compatibility checks and forces `npm i` to ensure all dependencies are installed. Otherwise, the command will check the application compatibility with the current CLI version and could fail requiring `tns migrate`.
 
 <% } %>
@@ -51,6 +51,7 @@ Start an emulator with specified device identifier and sdk | `$ tns run ios [--d
 ### Prerequisites
 
 Before running the iOS Simulator, verify that your system meets the following requirements.
+
 * You have installed a version of Xcode which is compatible with the ios-sim-portable npm package on which the NativeScript CLI depends. For more information, visit [https://www.npmjs.org/package/ios-sim-portable](https://www.npmjs.org/package/ios-sim-portable).
 
 ### Command Limitations

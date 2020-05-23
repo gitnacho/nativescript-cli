@@ -5,7 +5,7 @@ position: 1
 
 # tns appstore upload
 
-### Description
+## Description
 
 Uploads project to iTunes Connect. The command either issues a production build and uploads it to iTunes Connect, or uses an already built package to upload.
 The user will be prompted interactively for verification code when two-factor authentication enabled account is used. As on non-interactive console (CI), you will not be prompt for verification code. In this case, you need to generate a login session for your apple's account in advance using `tns apple-login` command. The generated value must be provided via the `--appleSessionBase64` option and is only valid for up to a month. Meaning you'll need to create a new session every month.

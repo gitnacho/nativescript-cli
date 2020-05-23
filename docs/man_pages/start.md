@@ -26,6 +26,7 @@ Command | Description
 [package-manager](general/package-manager.html) | Prints the value of the current package manager.
 
 ## Project Development Commands
+
 Command | Description
 ---|---
 [create](project/creation/create.html) | Creates a new project for native development with NativeScript.
@@ -49,12 +50,14 @@ Command | Description
 [plugin](lib-management/plugin.html) | Lets you manage the plugins for your project.
 
 ## Publishing Commands
+
 Command | Description
 ---|---
 [appstore](publishing/appstore.html) | Lists applications registered in iTunes Connect.
 [appstore upload](publishing/appstore-upload.html) | Uploads project to iTunes Connect.
 
 ## Device Commands
+
 Command | Description
 ---|---
 [device](device/device.html) | Lists all recognized connected physical or virtual devices.
@@ -63,12 +66,14 @@ Command | Description
 [device list-applications](device/device-list-applications.html) | Lists the installed applications on all connected devices.
 
 ## Environment Configuration Commands
+
 Command | Description
 ---|---
 [setup](env-configuration/setup.html) | Run the setup script to try to automatically configure your environment for local builds.
 [setup cloud](cloud/cloud-setup.html) | Install the `nativescript-cloud extension` to configure your environment for cloud builds.
 
 ## Global Options
+
 Option | Description
 -------|---------
 --help, -h, /? | Prints help about the selected command in the console.

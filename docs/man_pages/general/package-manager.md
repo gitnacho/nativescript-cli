@@ -5,7 +5,7 @@ position: 19
 
 # tns package-manager get
 
-### Description
+## Description
 
 Prints the value of the current package manager.
 

@@ -5,7 +5,7 @@ position: 6
 
 # tns platform
 
-### Description
+## Description
 
 Lists all platforms that the project currently targets. You can build and deploy your project only for these target platforms.
 

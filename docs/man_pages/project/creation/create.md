@@ -5,7 +5,7 @@ position: 1
 
 # tns create
 
-### Description
+## Description
 
 Interactively creates a new NativeScript app based on a predefined template.
 

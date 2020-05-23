@@ -5,7 +5,7 @@ position: 15
 
 # tns migrate
 
-### Description
+## Description
 
 Migrates the app dependencies to a form compatible with NativeScript 6.0. Running this command will not affect the codebase of the application and you might need to do additional changes manually.
 
@@ -13,9 +13,10 @@ The migrate command will update **"webpack.config.js"**, **"karma.conf.js"**, **
 The following folders will be removed: **"hooks"**, **"platforms"** and **"node_modules"**. The **"hooks"** folder will also be backed up in **".migration_backup"** folder.
 
 The **"nativescript-dev-sass"** and **"nativescript-dev-typescript"** dependencies will be replaced with **"node-sass"** and **"typescript"** respectively.
-The **"nativescript-dev-less"** dependency will be removed, but to enable LESS CSS support the user should follow the steps in this<% if(isConsole) { %> feature request: https://github.com/NativeScript/nativescript-dev-webpack/issues/967.<% } %><% if(isHtml) { %> [feature request](https://github.com/NativeScript/nativescript-dev-webpack/issues/967).<% } %>
+The **"nativescript-dev-less"** dependency will be removed, but to enable LESS CSS support the user should follow the steps in this<% if(isConsole) { %> feature request: <https://github.com/NativeScript/nativescript-dev-webpack/issues/967>.<% } %><% if(isHtml) { %> [feature request](https://github.com/NativeScript/nativescript-dev-webpack/issues/967).<% } %>
 
 The following dependencies will be updated if needed:
+
 * tns-core-modules
 * tns-core-modules-widgets
 * tns-platform-declarations

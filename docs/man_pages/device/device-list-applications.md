@@ -5,7 +5,7 @@ position: 3
 
 # tns device list-applications
 
-### Description
+## Description
 
 Lists the installed applications on all connected Android <% if(isWindows || isMacOS) { %>and iOS <% } %>devices.
 

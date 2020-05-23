@@ -5,7 +5,7 @@ position: 5
 
 # tns doctor
 
-### Description
+## Description
 
 Checks your system for configuration problems which might prevent the NativeScript CLI from working properly.
 

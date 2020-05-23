@@ -5,7 +5,7 @@ position: 1
 
 # tns autocomplete disable
 
-### Description
+## Description
 
 Disables command-line completion for bash and zsh shells. You need to restart the shell to complete the operation.
 

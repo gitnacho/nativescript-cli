@@ -5,7 +5,7 @@ position: 9
 
 # tns extension
 
-### Description
+## Description
 
 Prints information about all installed extensions.
 

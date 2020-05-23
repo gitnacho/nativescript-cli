@@ -5,7 +5,7 @@ position: 2
 
 # tns platform add
 
-### Description
+## Description
 
 Configures the current project to target the selected platform. <% if(isHtml) { %>When you add a target platform, the NativeScript CLI creates a corresponding platform-specific subdirectory under the platforms directory. This platform-specific directory contains the necessary files to let you build your project for the target platform.<% } %>
 
@@ -14,9 +14,9 @@ Configures the current project to target the selected platform. <% if(isHtml) { 
 Usage | Synopsis
 ------|-------
 Android latest runtime | `$ tns platform add android [--framework-path <File Path>]`
-Android selected runtime | `$ tns platform add android[@<Version>] [--framework-path <File Path>] `
+Android selected runtime | `$ tns platform add android[@<Version>] [--framework-path <File Path>]`
 <% if (isMacOS) { %>iOS latest runtime | `$ tns platform add ios [--framework-path <File Path>]`
-iOS selected runtime | `$ tns platform add ios[@<Version>] [--framework-path <File Path>] `<% } %>
+iOS selected runtime | `$ tns platform add ios[@<Version>] [--framework-path <File Path>]`<% } %>
 
 ### Options
 

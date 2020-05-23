@@ -5,15 +5,17 @@ position: 12
 
 # tns run
 
-### Description
+## Description
 
 Runs your project on all connected devices or in native emulators for the selected platform.<% if(isConsole && (isLinux || isWindows)) { %>The command will work with all currently running Android devices and emulators.<% } %> The command will prepare, build and deploy the app when necessary. By default listens for changes in your code, synchronizes those changes and refreshes all selected devices.
 
 <% if(isHtml) { %>
 When running this command without passing `--release` flag, the HMR (Hot Module Replacement) is enabled by default. In case you want to disable HMR, you can pass `--no-hmr` flag. When `--release` is passed, CLI disables HMR.
 
-#### How file changes are handled
+### How file changes are handled
+
 With HMR (Hot Module Replacement):
+
 * Changes in `.js`, `.ts`, `.less`, `.sass` and other file types that are accepted will cause a refresh of the application.
 * Changes in `App_Resources` will cause a rebuild of the application.
 * Changes in any `package.json` file inside the project will cause a rebuild of the application.
@@ -23,6 +25,7 @@ With HMR (Hot Module Replacement):
 * Changes that are not accepted and HMR fails will cause a restart of the native application.
 
 With **no** HMR:
+
 * Changes in `.js`, `.ts`, `.less`, `.sass` and other file types will cause a restart of the native application.
 * Changes in `App_Resources` will cause a rebuild of the application.
 * Changes in any `package.json` file inside the project will cause a rebuild of the application.
@@ -46,21 +49,21 @@ Run on a selected connected device or running emulator. Will start emulator with
 * `--device` - Specifies a connected device/emulator to start and run the app. `<Device ID>` is the index or `Device Identifier` of the target device as listed by the `$ tns device <Platform> --available-devices` command.
 * `--no-hmr` - Disables Hot Module Replacement (HMR). In this case, when a change in the code is applied, CLI will transfer the modified files and restart the application.
 * `--env.*` - Specifies additional flags that the bundler may process. Can be passed multiple times. Supported additional flags:
-    *   `--env.aot` - creates Ahead-Of-Time build (Angular only).
-    *   `--env.snapshot`- creates [a V8 Snapshot](https://docs.nativescript.org/performance-optimizations/bundling-with-webpack#v8-heap-snapshot) decreasing the app start time (only for release builds for Android).
-    *   `--env.compileSnapshot`- compiles the static assets produced by `--env.snapshot` into `.so` files allowing the native build to split them per architecture. This will reduce the app size when using the `--aab` option. 
-    *   `--env.uglify` - provides basic obfuscation and smaller app size.
-    *   `--env.report` - creates a Webpack report inside a `report` folder in the root folder.
-    *   `--env.sourceMap` - creates inline source maps.
-    *   `--env.hiddenSourceMap` - creates sources maps in the root folder (useful for Crashlytics usage with bundled app in release).
+  + `--env.aot` - creates Ahead-Of-Time build (Angular only).
+  + `--env.snapshot`- creates [a V8 Snapshot](https://docs.nativescript.org/performance-optimizations/bundling-with-webpack#v8-heap-snapshot) decreasing the app start time (only for release builds for Android).
+  + `--env.compileSnapshot`- compiles the static assets produced by `--env.snapshot` into `.so` files allowing the native build to split them per architecture. This will reduce the app size when using the `--aab` option.
+  + `--env.uglify` - provides basic obfuscation and smaller app size.
+  + `--env.report` - creates a Webpack report inside a `report` folder in the root folder.
+  + `--env.sourceMap` - creates inline source maps.
+  + `--env.hiddenSourceMap` - creates sources maps in the root folder (useful for Crashlytics usage with bundled app in release).
 * `--aab` - Specifies that the command will produce and deploy an Android App Bundle.
 * `--force` - If set, skips the application compatibility checks and forces `npm i` to ensure all dependencies are installed. Otherwise, the command will check the application compatibility with the current CLI version and could fail requiring `tns migrate`.
 
-
 <% if((isConsole && isMacOS) || isHtml) { %>### Arguments
 `<Platform>` is the target mobile platform for which you want to run your project. You can set the following target platforms:
- * `android` - Run your project on all Android devices and emulators.
- * `ios` - Run your project on all iOS devices and simulators.
+
+* `android` - Run your project on all Android devices and emulators.
+* `ios` - Run your project on all iOS devices and simulators.
 
 <% } %>
 

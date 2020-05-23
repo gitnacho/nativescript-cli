@@ -5,7 +5,7 @@ position: 2
 
 # tns appstore
 
-### Description
+## Description
 
 Lists all application records in iTunes Connect. The list contains name, version and bundle ID for each application record.
 

@@ -5,7 +5,7 @@ position: 4
 
 # tns publish
 
-### Description
+## Description
 
 Uploads project to an application store.
 

@@ -110,7 +110,7 @@ export class AssetsGenerationService implements IAssetsGenerationService {
 	}
 
 	private generateImage(background: string, width: number, height: number, outputPath: string, overlayImage?: Jimp): Jimp {
-		// Typescript declarations for Jimp are not updated to define the constructor with backgroundColor so we workaround it by casting it to <any> for this case only.
+		// TypeScript declarations for Jimp are not updated to define the constructor with backgroundColor so we workaround it by casting it to <any> for this case only.
 		const J = <any>Jimp;
 		const backgroundColor = this.getRgbaNumber(background);
 		let image = new J(width, height, backgroundColor);

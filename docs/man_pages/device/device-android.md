@@ -5,7 +5,7 @@ position: 1
 
 # tns device android
 
-### Description
+## Description
 
 Lists all recognized connected Android physical and running virtual devices with serial number and index. <% if(isHtml) { %>If a connected Android device is not shown in the list, make sure that you have installed the required Android USB drivers on your system and that USB debugging is enabled on the device.<% } %>
 

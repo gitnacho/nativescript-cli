@@ -5,7 +5,7 @@ position: 5
 
 # tns device run
 
-### Description
+## Description
 
 Runs the selected application on a connected Android <% if(isMacOS) { %>or iOS <% } %>device.
 
@@ -30,6 +30,7 @@ General | `$ tns device run <Application ID> [--device <Device ID>]`
 ### Prerequisites
 
 Before running your app on an iOS device, verify that your system and app meet the following requirements.
+
 * You are running the NativeScript CLI on a macOS system.
 * You have installed the latest version of Xcode.
 * You have built your app with the debug build configuration.

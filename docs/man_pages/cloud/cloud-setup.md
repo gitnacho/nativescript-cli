@@ -5,7 +5,7 @@ position: 5
 
 # tns cloud setup
 
-### Description
+## Description
 
 Install the `nativescript-cloud extension` to configure your environment for cloud builds.
 
@@ -20,7 +20,6 @@ Accept EULA agreement | `$ tns accept eula`
 Perform iOS cloud build | `$ tns cloud build ios --accountId=<accountId>`
 Perform Android cloud build | `$ tns cloud build android --accountId=<accountId>`
 View accountId (after logging in) | `$ tns account`
-
 
 ### Related Commands
 

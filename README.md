@@ -1,9 +1,8 @@
-
 <h1 id="nativescript-command-line-interface" align="center">
   <br>
   <a href="https://www.npmjs.com/package/nativescript"><img src="https://user-images.githubusercontent.com/760518/54612598-e70a3600-4a61-11e9-8d6d-7dd0c557e7cf.png" alt="Nativescript Logo" width="200"></a>
   <br>
-	  <br>
+  <br>
    NativeScript Command-Line Interface
   <br>
 </h1>
@@ -12,26 +11,25 @@
   </a>
 </p>
 
-<p align="center"> 
+<p align="center">
 <a href="https://travis-ci.org/NativeScript/nativescript-cli"><img alt="Build Status" src="https://travis-ci.org/NativeScript/nativescript-cli.svg?branch=build"></a>
 </p>
 
 Get it using: `npm install -g nativescript`
-
 
 * [What is NativeScript](#what-is-nativescript "Quick overview of NativeScript, the JavaScript framework for cross-platform development of native iOS and Android apps")
 * [How the NativeScript CLI works](#how-the-nativescript-cli-works "How the CLI works in more detail")
 * [Supported Platforms](#supported-platforms "The mobile platforms you can target with NativeScript")
 * [System Requirements](#system-requirements "The hardware and software requirements for setting up and working with the NativeScript CLI")
 * [Installation](#installation "How to configure and install the NativeScript CLI")
-    * [Install the NativeScript CLI](#install-the-nativescript-cli)
-    * [Configure Proxy Usage](#configure-proxy-settings)
+  + [Install the NativeScript CLI](#install-the-nativescript-cli)
+  + [Configure Proxy Usage](#configure-proxy-settings)
 * [Quick Start](#quick-start "Get started with the NativeScript CLI")
-    * [The Commands](#the-commands)
-    * [Create Project](#create-project)
-    * [Develop Your Project](#develop-your-project)
-    * [Build Your Project](#build-your-project)
-    * [Run Your Project](#run-your-project)
+  + [The Commands](#the-commands)
+  + [Create Project](#create-project)
+  + [Develop Your Project](#develop-your-project)
+  + [Build Your Project](#build-your-project)
+  + [Run Your Project](#run-your-project)
 * [Extending the CLI](#extending-the-cli)
 * [Troubleshooting](#troubleshooting)
 * [How to Contribute](#how-to-contribute)
@@ -39,8 +37,7 @@ Get it using: `npm install -g nativescript`
 * [Get Help](#get-help)
 * [License](#license)
 
-What is NativeScript
-===
+## What is NativeScript
 
 NativeScript is a cross-platform JavaScript framework that lets you develop native iOS and Android apps from a single code base. The framework provides JavaScript access to the native APIs, user interface, and rendering engines of iOS and Android. By using JavaScript or TypeScript, you can create one project that builds into an iOS or Android app with completely native user experience.
 
@@ -54,23 +51,21 @@ To learn more about NativeScript, you can check the following resources:
 
 [Back to Top][1]
 
-How the NativeScript CLI works
-===
+## How the NativeScript CLI works
 
 The NativeScript CLI is the command-line interface for interacting with NativeScript. It incorporates several important services. Consider the following diagram:
 
 ![NativeScript CLI diagram](https://github.com/NativeScript/nativescript-cli/raw/release/ns-cli.png)
 
-* **Commands** - pretty much what every CLI does - support of different command options, input validation and help  
+* **Commands** - pretty much what every CLI does - support of different command options, input validation and help
 * **Devices Service** - provides the communication between NativeScript and devices/emulators/simulators used to run/debug the app. Uses iTunes to talk to iOS and adb for Android
 * **LiveSync Service** - redeploys applications when code changes during development
 * **Hooks Service** - executes custom-written hooks in developed application, thus modifying the build process
-* **Platforms Service** - provides app build functionalities, uses Gradle to build Android packages and Xcode for iOS. 
+* **Platforms Service** - provides app build functionalities, uses Gradle to build Android packages and Xcode for iOS.
 
 [Back to Top][1]
 
-Supported Platforms
-===
+## Supported Platforms
 
 With the NativeScript CLI, you can target the following mobile platforms.
 
@@ -79,8 +74,7 @@ With the NativeScript CLI, you can target the following mobile platforms.
 
 [Back to Top][1]
 
-System Requirements
-===
+## System Requirements
 
 You can install and run the NativeScript CLI on Windows, macOS or Linux.
 
@@ -88,8 +82,7 @@ You can install and run the NativeScript CLI on Windows, macOS or Linux.
 * [macOS](https://docs.nativescript.org/start/ns-setup-os-x)
 * [Linux](https://docs.nativescript.org/start/ns-setup-linux)
 
-Installation
-===
+## Installation
 
 ## Install the NativeScript CLI
 
@@ -97,7 +90,7 @@ The NativeScript CLI is available for installing as an npm package.
 
 In the command prompt, run the following command.
 
-OS | Node.js installed from http://nodejs.org/ | Node.js installed via package manager
+OS | Node.js installed from <http://nodejs.org/> | Node.js installed via package manager
 ---|---------------------|----
 Windows | `npm install nativescript -g` | `npm install nativescript -g`
 macOS | `sudo npm install nativescript -g --unsafe-perm` | `npm install nativescript -g`
@@ -105,7 +98,7 @@ Linux | `sudo npm install nativescript -g --unsafe-perm` | `npm install nativesc
 
 To check if your system is configured properly, run the following command.
 
-```Shell
+``` Shell
 tns doctor
 ```
 
@@ -115,7 +108,7 @@ If you are working with the NativeScript CLI behind a web proxy, you need to con
 
 ### Set Proxy Settings
 
-```Shell
+``` Shell
 tns proxy set <Url> <Username> <Password>
 ```
 
@@ -123,9 +116,9 @@ tns proxy set <Url> <Username> <Password>
 
 <details><summary><code>&lt;Url&gt;</code></summary>
 <strong>(Required)</strong> The full URL of the proxy. The <code>&lt;Url&gt;</code> attribute is required and if you do not provide it when running the command, the NativeScript CLI will prompt you to provide it. An example of a valid proxy URL is <code>http://127.0.0.1:8888</code>.</details>
- 
+
 <details><summary><code>&lt;Username&gt;</code> and <code>&lt;Password&gt;</code></summary>
-<strong>(Optional)</strong> The credentials for the proxy. The <code>&lt;Username&gt;</code> and <code>&lt;Password&gt;</code> attributes are optional, however, if you choose to provide them, you must provide both.</details> 
+<strong>(Optional)</strong> The credentials for the proxy. The <code>&lt;Username&gt;</code> and <code>&lt;Password&gt;</code> attributes are optional, however, if you choose to provide them, you must provide both.</details>
 
 #### Options
 
@@ -136,26 +129,25 @@ The <code>--insecure</code> flag allows you to perform insecure SSL connections 
 
 * You can provide the `<Username>` and `<Password>` attributes only on Windows systems.
 * Proxy settings for the npm, the Android Gradle and (optional) Docker need to be configured separately. For more information, see the following articles:
-	* [Configure the npm proxy](https://docs.npmjs.com/misc/config#https-proxy)
-	* [Configure the Android Gradle proxy](https://docs.gradle.org/3.3/userguide/build_environment.html#sec:accessing_the_web_via_a_proxy)
-    * [Configure the Docker proxy](https://docs.docker.com/network/proxy/)
+  + [Configure the npm proxy](https://docs.npmjs.com/misc/config#https-proxy)
+  + [Configure the Android Gradle proxy](https://docs.gradle.org/3.3/userguide/build_environment.html#sec:accessing_the_web_via_a_proxy)
+  + [Configure the Docker proxy](https://docs.docker.com/network/proxy/)
 
 ### Display Current Proxy Settings
 
-```Shell
+``` Shell
 tns proxy
 ```
 
 ### Clear Proxy Settings
 
-```Shell
+``` Shell
 tns proxy clear
 ```
 
 [Back to Top][1]
 
-Quick Start
-===
+## Quick Start
 
 * [The Commands](#the-commands)
 * [Create Project](#create-project)
@@ -173,13 +165,13 @@ Run `tns help` to view all available commands in the browser. Run `tns help <Com
 
 To create a new cross-platform project from the default JavaScript template, run the following command.
 
-```Shell
+``` Shell
 tns create MyApp --js
 ```
 
 To create a new cross-platform project from the default TypeScript, Angular or Vue template, use the `template` option followed by either `typescript`, `angular` or `vue`.
 
-```Shell
+``` Shell
 tns create MyApp --template typescript
 tns create MyApp --template angular
 tns create MyApp --template vue
@@ -187,14 +179,15 @@ tns create MyApp --template vue
 
 Or you can simply use the shorthand `tsc` and `ng` options.
 
-```Shell
+``` Shell
 tns create MyApp --tsc
 tns create MyApp --ng
 ```
+
 With the `template` option you can also specify a local or a remote path to the template that you want to use to create your project.
 For example, if you want to create a React template, run the following command.
 
-```Shell
+``` Shell
 tns create MyApp --template https://github.com/shirakaba/tns-template-blank-react.git
 ```
 
@@ -202,7 +195,7 @@ The NativeScript CLI creates a new project and sets the application identifier t
 
 The CLI places the project in a new directory in the current directory. The newly created directory has the following structure.
 
-```
+``` Shell
 MyApp/
 ├── app
 │   ├── App_Resources
@@ -239,7 +232,7 @@ You can develop shared functionality or design in common files. To indicate that
 
 ### Development in `platforms`
 
-> **IMPORTANT:** Avoid editing files located in the `platforms` subdirectory because the NativeScript CLI overrides such files.
+> **Important**: Avoid editing files located in the `platforms` subdirectory because the NativeScript CLI overrides such files.
 
 ### Modifying Configuration Files
 
@@ -257,7 +250,7 @@ You can always override the generated entitlements file, by pointing to your own
 
 You can build it for your target mobile platforms.
 
-```Shell
+``` Shell
 tns build android
 tns build ios
 ```
@@ -266,7 +259,7 @@ The NativeScript CLI calls the SDK for the selected target platform and uses it 
 
 When you build for iOS, the NativeScript CLI will either build for a device, if there's a device attached, or for the native emulator if there are no devices attached. To trigger a native emulator build when a device is attached, set the `--emulator` flag.
 
-> **IMPORTANT:** To build your app for an iOS device, you must configure a valid certificate and provisioning profile pair, and have that pair present on your system for code signing your application package. For more information, see [iOS Code Signing - A Complete Walkthrough](http://seventhsoulmountain.blogspot.com/2013/09/ios-code-sign-in-complete-walkthrough.html).
+> **Important**: To build your app for an iOS device, you must configure a valid certificate and provisioning profile pair, and have that pair present on your system for code signing your application package. For more information, see [iOS Code Signing - A Complete Walkthrough](http://seventhsoulmountain.blogspot.com/2013/09/ios-code-sign-in-complete-walkthrough.html).
 
 [Back to Top][1]
 
@@ -276,7 +269,7 @@ You can test your work in progress on connected Android or iOS devices.
 
 To verify that the NativeScript CLI recognizes your connected devices, run the following command.
 
-```Shell
+``` Shell
 tns devices
 ```
 
@@ -284,15 +277,14 @@ The NativeScript CLI lists all connected physical devices and running emulators/
 
 After you have listed the available devices, you can quickly run your app on connected devices by executing:
 
-```Shell
+``` Shell
 tns run android
 tns run ios
 ```
 
 [Back to Top][1]
 
-Extending the CLI
-===
+## Extending the CLI
 
 The NativeScript CLI lets you extend its behavior and customize it to fit your needs by using [hooks](https://en.wikipedia.org/wiki/Hooking).
 
@@ -302,12 +294,11 @@ For more information, see the [Extending the CLI document](https://github.com/Na
 
 [Back to Top][1]
 
-Troubleshooting
-===
+## Troubleshooting
 
 If the NativeScript CLI does not behave as expected, you might be facing a configuration issue. For example, a missing `JAVA` path. To check if your system is configured properly for the NativeScript CLI, run the following command.
 
-```bash
+``` Shell
 tns doctor
 ```
 
@@ -317,8 +308,7 @@ If addressing the configuration issues does not resolve your problem, you can [r
 
 [Back to Top][1]
 
-How to Contribute
-===
+## How to Contribute
 
 To learn how to log a bug that you just discovered, click [here](https://github.com/NativeScript/nativescript-cli/blob/master/CONTRIBUTING.md#report-an-issue).
 
@@ -328,9 +318,9 @@ To learn how to contribute to the code base, click [here](https://github.com/Nat
 
 [Back to Top][1]
 
-How to Build
-===
-```
+## How to Build
+
+``` Shell
 git clone https://github.com/NativeScript/nativescript-cli
 cd nativescript-cli
 npm run setup
@@ -341,15 +331,13 @@ To use the locally built CLI instead `tns` you can call `PATH_TO_CLI_FOLDER/bin/
 
 [Back to Top][1]
 
-Get Help
-===
+## Get Help
 
 Please, use [github issues](https://github.com/NativeScript/nativescript-cli/issues) strictly for [reporting bugs](CONTRIBUTING.md#report-an-issue) or [requesting features](CONTRIBUTING.md#request-a-feature). For general NativeScript questions and support, check out [Stack Overflow](https://stackoverflow.com/questions/tagged/nativescript) or ask our experts in the [NativeScript community Slack channel](https://www.nativescript.org/slack-invitation-form).
 
 [Back to Top][1]
 
-License
-===
+## License
 
 This software is licensed under the Apache 2.0 license, quoted <a href="LICENSE" target="_blank">here</a>.
 

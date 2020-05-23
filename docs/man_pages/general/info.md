@@ -5,7 +5,7 @@ position: 11
 
 # tns info
 
-### Description
+## Description
 
 Displays version information about the NativeScript CLI, core modules, and runtimes.
 

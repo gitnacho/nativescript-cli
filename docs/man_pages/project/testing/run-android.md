@@ -5,7 +5,7 @@ position: 10
 
 # tns run android
 
-### Description
+## Description
 
 Runs your project on a connected Android device or Android emulator, if configured. This is shorthand for prepare, build and deploy. While your app is running, prints the output from the application in the console and watches for changes in your code. Once a change is detected, it synchronizes the change with all selected devices and restarts/refreshes the application.
 
@@ -34,14 +34,21 @@ Start a default emulator if none are running, or run application on all connecte
 * `--key-store-alias` - Provides the alias for the keystore file specified with `--key-store-path`. You can use the `--key-store-*` options along with `--release` to produce a signed release build. You need to specify all `--key-store-*` options.
 * `--key-store-alias-password` - Provides the password for the alias specified with `--key-store-alias-password`. You can use the `--key-store-*` options along with `--release` to produce a signed release build. You need to specify all `--key-store-*` options.
 * `--no-hmr` - Disables Hot Module Replacement (HMR). In this case, when a change in the code is applied, CLI will transfer the modified files and restart the application.
-* `--env.*` - Specifies additional flags that the bundler may process. Can be passed multiple times. 
-    *   `--env.aot` - creates Ahead-Of-Time build (Angular only).
-    *   `--env.snapshot`- creates [a V8 Snapshot](https://docs.nativescript.org/performance-optimizations/bundling-with-webpack#v8-heap-snapshot) decreasing the app start time (only for release builds for Android).
-    *   `--env.compileSnapshot`- compiles the static assets produced by `--env.snapshot` into `.so` files allowing the native build to split them per architecture. This will reduce the app size when using the `--aab` option. 
-    *   `--env.uglify` - provides basic obfuscation and smaller app size.
-    *   `--env.report` - creates a Webpack report inside a `report` folder in the root folder.
-    *   `--env.sourceMap` - creates inline source maps.
-    *   `--env.hiddenSourceMap` - creates sources maps in the root folder (useful for Crashlytics usage with bundled app in release).
+* `--env.*` - Specifies additional flags that the bundler may process. Can be passed multiple times.
+
+  + `--env.aot` - creates Ahead-Of-Time build (Angular only).
+
+  + `--env.snapshot`- creates [a V8 Snapshot](https://docs.nativescript.org/performance-optimizations/bundling-with-webpack#v8-heap-snapshot) decreasing the app start time (only for release builds for Android).
+
+  + `--env.compileSnapshot`- compiles the static assets produced by `--env.snapshot` into `.so` files allowing the native build to split them per architecture. This will reduce the app size when using the `--aab` option.
+
+  + `--env.uglify` - provides basic obfuscation and smaller app size.
+
+  + `--env.report` - creates a Webpack report inside a `report` folder in the root folder.
+
+  + `--env.sourceMap` - creates inline source maps.
+
+  + `--env.hiddenSourceMap` - creates sources maps in the root folder (useful for Crashlytics usage with bundled app in release).
 * `--aab` - Specifies that the command will produce and deploy an Android App Bundle.
 * `--force` - If set, skips the application compatibility checks and forces `npm i` to ensure all dependencies are installed. Otherwise, the command will check the application compatibility with the current CLI version and could fail requiring `tns migrate`.
 
@@ -50,10 +57,11 @@ Start a default emulator if none are running, or run application on all connecte
 ### Prerequisites
 
 Before running your app in the Android emulator from the Android SDK, verify that your system meets the following requirements.
+
 * Verify that you have installed the Android SDK.
 * Verify that you have added the following Android SDK directories to the `PATH` environment variable:
-    * `platform-tools`
-    * `tools`
+  + `platform-tools`
+  + `tools`
 
 ### Command Limitations
 

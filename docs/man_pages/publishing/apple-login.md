@@ -5,7 +5,7 @@ position: 5
 
 # tns apple-login
 
-### Description
+## Description
 
 Uses the provided Apple credentials to obtain Apple session which can be used when publishing to Apple AppStore.
 

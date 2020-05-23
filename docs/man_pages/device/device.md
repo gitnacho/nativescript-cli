@@ -5,7 +5,7 @@ position: 6
 
 # tns device
 
-### Description
+## Description
 
 Lists all recognized connected Android <% if(isWindows || isMacOS) { %>or iOS devices <% } %>with serial number and index<% if(isWindows || isMacOS) { %>, grouped by platform<% } %>.
 
@@ -18,6 +18,7 @@ General | `$ tns device [<Command>]`
 ### Arguments
 
 `<Command>` extends the `device` command. You can set the following values for this argument:
+
 * `android` - Lists all recognized connected Android physical and running Android virtual devices.
 <% if(isWindows || isMacOS) { %>* `ios` - Lists all recognized connected iOS devices. <% } %>
 * `log` - Opens the device log stream for a selected connected device.

@@ -5,7 +5,7 @@ position: 18
 
 # tns package-manager set
 
-### Description
+## Description
 
 Enables the specified package manager for the NativeScript CLI. Supported values are npm, yarn and pnpm.
 

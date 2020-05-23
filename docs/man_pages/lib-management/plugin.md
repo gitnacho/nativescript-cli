@@ -5,7 +5,7 @@ position: 10
 
 # tns plugin
 
-### Description
+## Description
 
 Lets you manage the plugins for your project.
 
@@ -19,6 +19,7 @@ Manage plugins | `$ tns plugin <Command>`
 ### Arguments
 
 `<Command>` extends the `plugin` command. You can set the following values for this argument.
+
 * `add` - Installs the specified plugin and its dependencies.
 * `remove` - Uninstalls the specified plugin and its dependencies.
 * `update` - Uninstalls and installs the specified plugin(s) and its dependencies.

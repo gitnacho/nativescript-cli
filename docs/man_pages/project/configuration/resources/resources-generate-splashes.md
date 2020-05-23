@@ -5,7 +5,7 @@ position: 12
 
 # tns resources generate splashes
 
-### Description
+## Description
 
 Generates all splashscreens for Android and iOS platforms and places the generated images in the correct directories under `App_Resources/<platform>` directory.
 
@@ -21,7 +21,7 @@ Usage | Synopsis
 
 ### Arguments
 
-* `<Path to image>` is a valid path to an image that will be used to generate all splashscreens. 
+* `<Path to image>` is a valid path to an image that will be used to generate all splashscreens.
 
 <% if(isHtml) { %>
 

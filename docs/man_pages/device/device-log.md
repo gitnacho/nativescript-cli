@@ -5,7 +5,7 @@ position: 4
 
 # tns device log
 
-### Description
+## Description
 
 Opens the device log stream for a selected connected Android <% if(isWindows || isMacOS) { %>or iOS <% } %>device.
 

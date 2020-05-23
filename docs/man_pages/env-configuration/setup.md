@@ -5,7 +5,7 @@ position: 5
 
 # tns setup
 
-### Description
+## Description
 
 Run the setup script to automatically install the NativeScript dependencies and configure your environment for local builds.
 

@@ -5,7 +5,7 @@ position: 4
 
 # tns autocomplete
 
-### Description
+## Description
 
 Prints your current command-line completion settings. If disabled, prompts you to enable it.
 
@@ -23,6 +23,7 @@ Disable | `$ tns autocomplete disable`
 ### Arguments
 
 `<Command>` extends the `autocomplete` command. You can set the following values for this attribute.
+
 * `status` - Prints your current command-line completion settings.
 * `enable` - Enables command-line completion. You need to restart the shell to complete the operation.
 * `disable` - Disables command-line completion. You need to restart the shell to complete the operation.

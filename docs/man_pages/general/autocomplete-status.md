@@ -5,7 +5,7 @@ position: 3
 
 # tns autocomplete status
 
-### Description
+## Description
 
 Prints your current command-line completion settings.
 

@@ -5,7 +5,7 @@ position: 10
 
 # tns help
 
-### Description
+## Description
 
 Opens the command reference for all commands in your browser or shows information about the selected command in the browser.
 

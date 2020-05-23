@@ -5,7 +5,7 @@ position: 2
 
 # tns autocomplete enable
 
-### Description
+## Description
 
 Enables command-line completion for bash and zsh shells. You need to restart the shell to complete the operation.
 

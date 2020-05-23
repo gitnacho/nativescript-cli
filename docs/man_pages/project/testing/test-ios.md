@@ -5,11 +5,11 @@ position: 22
 
 # tns test ios
 
-### Description
+## Description
 
 Runs the tests in your project on connected iOS devices or the iOS Simulator.<% if(isConsole && isMacOS) { %> Your project must already be configured for unit testing by running `$ tns test init`.<% } %>
 
-<% if(isConsole && (isLinux || isWindows)) { %>WARNING: You can run this command only on macOS systems. To view the complete help for this command, run `$ tns help test ios`<% } %> 
+<% if(isConsole && (isLinux || isWindows)) { %>WARNING: You can run this command only on macOS systems. To view the complete help for this command, run `$ tns help test ios`<% } %>
 
 ### Commands
 

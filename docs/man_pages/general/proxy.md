@@ -5,7 +5,7 @@ position: 14
 
 # tns proxy
 
-### Description
+## Description
 
 Displays the current proxy settings of the NativeScript CLI.
 
@@ -15,8 +15,10 @@ Usage | Synopsis
 ------|-------
 General | `$ tns proxy [<Command>]`
 
-### Arguments
+## Arguments
+
 `<Command>` extends the `proxy` command. You can set the following values for this attribute:
+
 * `set` - Sets proxy settings
 * `clear` - Clears proxy settings
 

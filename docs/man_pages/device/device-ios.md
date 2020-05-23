@@ -5,7 +5,7 @@ position: 2
 
 # tns device ios
 
-### Description
+## Description
 
 Lists all recognized connected iOS devices with serial number and index.
 
@@ -17,7 +17,7 @@ Usage | Synopsis
 ------|-------
 General | `$ tns device ios [--timeout <Milliseconds>]`
 
-<% if((isConsole && (isWindows || isMacOS)) || isHtml) { %>  
+<% if((isConsole && (isWindows || isMacOS)) || isHtml) { %>
 
 ### Options
 

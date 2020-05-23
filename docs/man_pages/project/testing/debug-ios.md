@@ -5,13 +5,13 @@ position: 5
 
 # tns debug ios
 
-### Description
+## Description
 
 Initiates a debugging session for your project on a connected iOS device or in the iOS simulator. When necessary, the command will prepare, build, deploy and launch the app before starting the debug session. While debugging, the output from the application is printed in the console and any changes made to your code are synchronizes with the deployed app. <% if(isHtml) { %>Any debugging traffic is forwarded to port 8080 (or the next available one) from the device to the local machine.<% } %>
 
 <% if(isConsole && (isWindows || isLinux)) { %>WARNING: You can run this command only on macOS systems. To view the complete help for this command, run `$ tns help debug ios`<% } %>
 <% if((isConsole && isMacOS) || isHtml) { %>
-<% if(isHtml) { %>> <% } %>IMPORTANT: Before building for iOS device, verify that you have configured a valid pair of certificate and provisioning profile on your macOS system. <% if(isHtml) { %>For more information, see the [Code Signing](https://developer.apple.com/support/code-signing/) and [Maintain Signing Assets](https://help.apple.com/xcode/mac/current/#/dev3a05256b8) sections from the Apple Developer documentation.<% } %>
+<% if(isHtml) { %>> <% } %> **Important**: Before building for iOS device, verify that you have configured a valid pair of certificate and provisioning profile on your macOS system. <% if(isHtml) { %>For more information, see the [Code Signing](https://developer.apple.com/support/code-signing/) and [Maintain Signing Assets](https://help.apple.com/xcode/mac/current/#/dev3a05256b8) sections from the Apple Developer documentation.<% } %>
 
 ### Commands
 

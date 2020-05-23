@@ -5,13 +5,16 @@ position: 6
 
 # tns debug
 
-### Description
+## Description
 
 Initiates a debugging session for your project on a connected device or native emulator. <% if(isMacOS) { %>You must specify the target platform on which you want to debug.<% } %> When necessary, the command will prepare, build, deploy and launch the app before starting the debug session. While debugging, the output from the application is printed in the console and any changes made to your code are synchronized on all connected devices or running emulators.
 
 <% if(isHtml) { %>
-#### How file changes are handled
+
+### How file changes are handled
+
 With HMR (Hot Module Replacement):
+
 * Changes in `.js`, `.ts`, `.less`, `.sass` and other file types that are accepted will cause a refresh of the application.
 * Changes in `App_Resources` will cause a rebuild of the application.
 * Changes in any `package.json` file inside the project will cause a rebuild of the application.
@@ -21,6 +24,7 @@ With HMR (Hot Module Replacement):
 * Changes that are not accepted and HMR fails will cause a restart of the native application.
 
 With **no** HMR:
+
 * Changes in `.js`, `.ts`, `.less`, `.sass` and other file types will cause a restart of the native application.
 * Changes in `App_Resources` will cause a rebuild of the application.
 * Changes in any `package.json` file inside the project will cause a rebuild of the application.
@@ -39,6 +43,7 @@ Usage | Synopsis
 
 <% if((isConsole && isMacOS) || isHtml) { %>### Arguments
 `<Platform>` is the target mobile platform for which you want to debug your project. You can set the following target platforms:
+
 * `android` - Start a debugging session for your project on a connected Android device or Android emulator.
 * `ios` - Start a debugging session for your project on a connected iOS device or in the native iOS simulator.<% } %>
 
