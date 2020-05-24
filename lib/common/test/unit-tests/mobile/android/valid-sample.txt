@@ -78,7 +78,7 @@
 08-30 12:43:33.243  2099  2286 W GooglePlayServicesUtil: Google Play services signature invalid.
 08-30 12:43:33.243  2099  3185 E AppDataSearchHelper: Could not connect to AppDataSearch for onTableChanged, error 9
 08-30 12:43:33.243  2099  3185 W AppDataSearchHelper: Table change notification failed for com.google.android.gms.appdatasearch.a.h@be7fd6a1
-08-30 12:43:33.243  2099  3185 I UpdateIcingCorporaServi: UpdateCorporaTask done [took 46 ms] updated apps [took 46 ms] 
+08-30 12:43:33.243  2099  3185 I UpdateIcingCorporaServi: UpdateCorporaTask done [took 46 ms] updated apps [took 46 ms]
 08-30 12:43:33.254  2287  3205 W IcingInternalCorpora: getNumBytesRead when not calculated.
 08-30 12:43:33.254  2287  3206 I Icing   : Usage reports 0 indexed 0 rejected 0 imm upload false
 08-30 12:43:33.255  2287  3206 I Icing   : Usage reports 0 indexed 0 rejected 0 imm upload false

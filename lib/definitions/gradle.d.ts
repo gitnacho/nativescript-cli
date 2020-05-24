@@ -2,7 +2,7 @@ interface IGradleCommandService {
 	executeCommand(gradleArgs: string[], options: IGradleCommandOptions): Promise<ISpawnResult>;
 }
 
-interface IGradleCommandOptions { 
+interface IGradleCommandOptions {
 	cwd: string;
 	message?: string;
 	stdio?: string;

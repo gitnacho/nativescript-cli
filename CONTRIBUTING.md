@@ -29,19 +29,19 @@ Before you submit a Pull Request, consider the following guidelines.
 * Search <a href="https://github.com/NativeScript/nativescript-cli/pulls">GitHub</a> for an open or closed Pull Request that relates to your submission.
 * Clone the repository.
 
-  ``` Git
+  ``` Shell
   git clone git@github.com:NativeScript/nativescript-cli.git
   ```
 
 * Run the setup script. This will initialize the git submodule, install the node dependencies and build with grunt.
 
-  ``` Git
+  ``` Shell
   npm run setup
   ```
 
 * Make your changes in a new `git` branch. We use the <a href="http://nvie.com/posts/a-successful-git-branching-model/">Gitflow branching model</a> so you will have to branch from our master branch.
 
-  ``` Git
+  ``` Shell
   git checkout -b my-fix-branch master
   ```
 
@@ -66,20 +66,20 @@ Before you submit a Pull Request, consider the following guidelines.
 
 * Commit your changes following the [commit message guidelines](https://github.com/NativeScript/NativeScript/blob/master/CONTRIBUTING.md#-commit-message-guidelines) (the commit message is used to generate release notes).
 
-  ``` Git
+  ``` Shell
   git commit -m "fix: my awesome fix"
   ```
 
 * Push your branch to GitHub.
 
-  ``` Git
+  ``` Shell
   git push origin my-fix-branch
   ```
 
 * In GitHub, send a Pull Request to nativescript-cli:master.
 * If we suggest changes, you can modify your branch, rebase, and force a new push to your GitHub repository to update the Pull Request.
 
-  ``` Git
+  ``` Shell
   git rebase master -i
   git push -f
   ```
@@ -90,25 +90,25 @@ When the patch is reviewed and merged, you can safely delete your branch and pul
 
 * Delete the remote branch on GitHub.
 
-  ``` Git
+  ``` Shell
   git push origin --delete my-fix-branch
   ```
 
 * Check out the master branch.
 
-  ``` Git
+  ``` Shell
   git checkout master -f
   ```
 
 * Delete the local branch.
 
-  ``` Git
+  ``` Shell
   git branch -D my-fix-branch
   ```
 
 * Update your master branch with the latest upstream version.
 
-  ``` Git
+  ``` Shell
   git pull --ff upstream master
   ```
 

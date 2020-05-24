@@ -22,8 +22,8 @@ General | `$ tns device [<Command>]`
 * `android` - Lists all recognized connected Android physical and running Android virtual devices.
 <% if(isWindows || isMacOS) { %>* `ios` - Lists all recognized connected iOS devices. <% } %>
 * `log` - Opens the device log stream for a selected connected device.
-* `list-applications` - Lists the installed applications on all connected Android <% if(isWindows || isMacOS) { %>or iOS <%}%>devices.
-* `run` - Runs the selected application on a connected Android <% if(isMacOS) { %>or iOS <%}%>device.
+* `list-applications` - Lists the installed applications on all connected Android <% if(isWindows || isMacOS) { %>or iOS <% } %>devices.
+* `run` - Runs the selected application on a connected Android <% if(isMacOS) { %>or iOS <% } %>device.
 
 <% if(isHtml) { %>
 

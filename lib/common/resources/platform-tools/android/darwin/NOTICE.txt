@@ -1464,15 +1464,15 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 Notices for file(s):
 /framework/doclava.jar
 ------------------------------------------------------------
- 
+
  Copyright (C) 2010 Google Inc.
- 
+
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
  You may obtain a copy of the License at
- 
+
  http://www.apache.org/licenses/LICENSE-2.0
- 
+
  Unless required by applicable law or agreed to in writing, software
  distributed under the License is distributed on an "AS IS" BASIS,
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -1761,7 +1761,7 @@ Notices for file(s):
  * are met:
  *
  * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer. 
+ *    notice, this list of conditions and the following disclaimer.
  *
  * 2. Redistributions in binary form must reproduce the above copyright
  *    notice, this list of conditions and the following disclaimer in
@@ -1816,21 +1816,21 @@ Notices for file(s):
  * This package is an SSL implementation written
  * by Eric Young (eay@cryptsoft.com).
  * The implementation was written so as to conform with Netscapes SSL.
- * 
+ *
  * This library is free for commercial and non-commercial use as long as
  * the following conditions are aheared to.  The following conditions
  * apply to all code found in this distribution, be it the RC4, RSA,
  * lhash, DES, etc., code; not just the SSL code.  The SSL documentation
  * included with this distribution is covered by the same copyright terms
  * except that the holder is Tim Hudson (tjh@cryptsoft.com).
- * 
+ *
  * Copyright remains Eric Young's, and as such any Copyright notices in
  * the code are not to be removed.
  * If this package is used in a product, Eric Young should be given attribution
  * as the author of the parts of the library used.
  * This can be in the form of a textual message at program startup or
  * in documentation (online or textual) provided with the package.
- * 
+ *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
  * are met:
@@ -1845,10 +1845,10 @@ Notices for file(s):
  *     Eric Young (eay@cryptsoft.com)"
  *    The word 'cryptographic' can be left out if the rouines from the library
  *    being used are not cryptographic related :-).
- * 4. If you include any Windows specific code (or a derivative thereof) from 
+ * 4. If you include any Windows specific code (or a derivative thereof) from
  *    the apps directory (application code) you must include an acknowledgement:
  *    "This product includes software written by Tim Hudson (tjh@cryptsoft.com)"
- * 
+ *
  * THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS'' AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -1860,7 +1860,7 @@ Notices for file(s):
  * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
- * 
+ *
  * The licence and distribution terms for any publically available version or
  * derivative of this code cannot be changed.  i.e. this code cannot simply be
  * copied and put under another distribution licence
@@ -2266,7 +2266,7 @@ Notices for file(s):
 /framework/org-netbeans-api-visual.jar
 /framework/org-openide-util.jar
 ------------------------------------------------------------
-The GNU General Public License (GPL) Version 2, June 1991 
+The GNU General Public License (GPL) Version 2, June 1991
 
 Copyright (C) 1989, 1991 Free Software Foundation, Inc.
 
@@ -2647,24 +2647,24 @@ Public License instead of this License.
 
 "CLASSPATH" EXCEPTION TO THE GPL VERSION 2
 
-Certain source files distributed by Sun Microsystems, Inc. 
+Certain source files distributed by Sun Microsystems, Inc.
 are subject to  the following clarification and special
 exception to the GPL Version 2, but only where Sun has
 expressly included in the particular source file's header
 the words  "Sun designates this particular file as subject
 to the "Classpath" exception as provided by Sun in the
-License file that accompanied this code." 
+License file that accompanied this code."
 
    Linking this library statically or dynamically with other
-modules is making a combined work based on this library. 
+modules is making a combined work based on this library.
 Thus, the terms and conditions of the GNU General Public
-License Version 2 cover the whole combination. 
+License Version 2 cover the whole combination.
 
   As a special exception, the copyright holders of this
 library give you  permission to link this library with
 independent modules to produce an  executable, regardless of
 the license terms of these independent modules,  and to copy
-and distribute the resulting executable under terms of your 
+and distribute the resulting executable under terms of your
 choice, provided that you also meet, for each linked
 independent module,  the terms and conditions of the license
 of that module.  An independent  module is a module which is

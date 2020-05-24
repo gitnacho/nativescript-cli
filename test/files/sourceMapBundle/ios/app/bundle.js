@@ -111,8 +111,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tns_core_modules_application__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tns_core_modules_application__WEBPACK_IMPORTED_MODULE_0__);
 
             __webpack_require__("../node_modules/nativescript-dev-webpack/load-application-css-regular.js")();
-            
-            
+
+
         if (true) {
             const hmrUpdate = __webpack_require__("../node_modules/nativescript-dev-webpack/hmr/index.js").hmrUpdate;
             global.__initialHmrUpdate = true;
@@ -136,10 +136,10 @@ __webpack_require__.r(__webpack_exports__);
                 global.__initialHmrUpdate = false;
             })
         }
-        
+
             const context = __webpack_require__("./ sync recursive (root|page)\\.(xml|css|js|ts|scss)$");
             global.registerWebpackModules(context);
-            
+
         __webpack_require__("../node_modules/tns-core-modules/bundle-entry-points.js");
         /*
 In NativeScript, the app.ts file is the entry point to your application.
@@ -153,9 +153,9 @@ Do not place any code after the application has been started as it will not
 be executed on iOS.
 */
 
-    
-        
-        
+
+
+
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__("../node_modules/webpack/buildin/global.js")))
 
 /***/ }),

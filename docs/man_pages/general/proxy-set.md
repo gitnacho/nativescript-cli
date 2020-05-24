@@ -13,7 +13,7 @@ Sets the proxy settings of the NativeScript CLI.
 
 Usage | Synopsis
 ------|-------
-General | `$ tns proxy set [<Url> <% if(isWindows) {%>[<Username> [<Password>]]<%}%>]`
+General | `$ tns proxy set [<Url> <% if(isWindows) {%>[<Username> [<Password>]]<% } %>]`
 
 ### Options
 
